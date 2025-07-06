@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate, Link } from 'react-router-dom';
 
 function useQuery() {
   return new URLSearchParams(useLocation().search);
@@ -12,14 +12,14 @@ const Shop = ({ user }) => {
   const [category, setCategory] = useState(urlCategory || 'all');
   const navigate = useNavigate();
 
-  // Fetch products once
+  // Fetch products.json once on load
   useEffect(() => {
     fetch('/products.json')
       .then(res => res.json())
       .then(data => setProducts(data));
   }, []);
 
-  
+  // Update category when URL changes
   useEffect(() => {
     setCategory(urlCategory || 'all');
   }, [urlCategory]);
@@ -55,13 +55,21 @@ const Shop = ({ user }) => {
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 flex-1">
         {filteredProducts.map(product => (
           <div key={product.id} className="card bg-base-100 shadow-md hover:shadow-lg">
-            <figure>
-              <img src={product.image} alt={product.name} className="w-full h-48 object-cover" />
-            </figure>
+            <Link to={`/product/${product.id}`}>
+              <figure>
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="w-full h-48 object-cover"
+                />
+              </figure>
+            </Link>
+
             <div className="card-body">
               <h2 className="card-title">{product.name}</h2>
               <p className="text-primary font-bold">{product.price}৳</p>
-              <div className="card-actions justify-end">
+
+              <div className="card-actions justify-end mt-2">
                 <button className="btn btn-outline btn-sm" disabled={!user}>
                   Add to Cart
                 </button>
@@ -69,8 +77,11 @@ const Shop = ({ user }) => {
                   Buy Now
                 </button>
               </div>
+
               {!user && (
-                <p className="text-xs text-error mt-2">Sign in to buy or add to cart</p>
+                <p className="text-xs text-error mt-2">
+                  Sign in to buy or add to cart
+                </p>
               )}
             </div>
           </div>

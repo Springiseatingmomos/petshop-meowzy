@@ -4,69 +4,89 @@
     "name": "Cat Scratching Post",
     "category": "cat",
     "price": 1200,
-    "image": "https://placekitten.com/300/300"
+    "image": "https://placekitten.com/300/300",
+    "description": "Durable and cozy scratching post to keep your cat's claws healthy and your furniture safe.",
+    "rating": 4.5
   },
   {
     "id": 2,
     "name": "Dog Chew Toy",
     "category": "dog",
     "price": 850,
-    "image": "https://placedog.net/300/300?id=2"
+    "image": "https://placedog.net/300/300?id=2",
+    "description": "Tough and fun chew toy to keep your dog engaged and prevent boredom.",
+    "rating": 4.2
   },
   {
     "id": 3,
     "name": "Fish Tank Decor",
     "category": "fish",
     "price": 450,
-    "image": "https://picsum.photos/id/103/300/300"
+    "image": "https://picsum.photos/id/103/300/300",
+    "description": "Colorful and natural-looking decor piece to enhance your fish tank's beauty.",
+    "rating": 4.0
   },
   {
     "id": 4,
     "name": "Bird Cage Swing",
     "category": "bird",
     "price": 650,
-    "image": "https://picsum.photos/id/104/300/300"
+    "image": "https://picsum.photos/id/104/300/300",
+    "description": "Fun and safe swing for your bird's exercise and entertainment inside the cage.",
+    "rating": 4.3
   },
   {
     "id": 5,
     "name": "Reptile Heating Pad",
     "category": "reptile",
     "price": 980,
-    "image": "https://picsum.photos/id/105/300/300"
+    "image": "https://picsum.photos/id/105/300/300",
+    "description": "Keep your cold-blooded pets warm and healthy with this safe heating pad.",
+    "rating": 4.1
   },
   {
     "id": 6,
     "name": "Small Pet Wheel",
     "category": "small pet",
     "price": 570,
-    "image": "https://picsum.photos/id/106/300/300"
+    "image": "https://picsum.photos/id/106/300/300",
+    "description": "Smooth-spinning wheel for small pets like hamsters to run safely and stay active.",
+    "rating": 4.6
   },
   {
     "id": 7,
     "name": "Cat Collar Bell",
     "category": "cat",
     "price": 250,
-    "image": "https://placekitten.com/301/301"
+    "image": "https://placekitten.com/301/301",
+    "description": "Stylish and soft cat collar with bell to help you keep track of your feline friend.",
+    "rating": 4.0
   },
   {
     "id": 8,
     "name": "Dog Shampoo",
     "category": "dog",
     "price": 400,
-    "image": "https://placedog.net/301/301?id=8"
+    "image": "https://placedog.net/301/301?id=8",
+    "description": "Gentle and effective shampoo for dogs that cleans, conditions, and leaves a fresh scent.",
+    "rating": 4.4
   },
   {
     "id": 9,
     "name": "Fish Food Pack",
     "category": "fish",
     "price": 300,
-    "image": "https://picsum.photos/id/107/300/300"
+    "image": "https://picsum.photos/id/107/300/300",
+    "description": "Nutritious food pack for all kinds of aquarium fish to support vibrant health.",
+    "rating": 4.1
   },
   {
     "id": 10,
     "name": "Bird Feeder Bowl",
     "category": "bird",
     "price": 350,
-    "image": "https://picsum.photos/id/108/300/300"
+    "image": "https://picsum.photos/id/108/300/300",
+    "description": "Easy-to-mount bird feeder bowl with anti-spill design and durable material.",
+    "rating": 4.2
   }
 ]

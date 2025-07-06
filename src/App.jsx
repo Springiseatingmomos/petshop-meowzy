@@ -32,6 +32,7 @@ function App() {
         <Route path="/care-tips" element={<CareTips />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/settings" element={<Settings />} />
+        <Route path="/product/:id" element={<ProductDetails user={user} />} />
       </Routes>
       <Footer />
     </BrowserRouter>
